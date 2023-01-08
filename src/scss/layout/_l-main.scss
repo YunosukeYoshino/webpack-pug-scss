@@ -1,0 +1,29 @@
+@use "../foundation/" as *;
+
+body {
+    background-color: #333;
+    color: #fff;
+}
+.text {
+    // 使う時（min-width）
+    // ここにsp用スタイル
+    @include mq {
+        // @media screen and (min-width: 768px)と同じ
+        // font-size: 1.6rem;
+    }
+    @include mq(lg) {
+        // @media screen and (min-width: 1024px)と同じ
+        // font-size: 2.4em;
+    }
+
+    // 使う時（max-width）
+    // ここにpc用スタイル
+    @include mq(lg, max) {
+        // @media screen and (max-width: 1023px)と同じ
+        font-size: rem(20px);
+    }
+    @include mq(md, max) {
+        // @media screen and (max-width: 767px)と同じ
+        font-size: rem(16px);
+    }
+}

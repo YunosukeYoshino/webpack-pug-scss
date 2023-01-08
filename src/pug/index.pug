@@ -1,0 +1,11 @@
+doctype html
+html(lang="ja")
+  include components/_head.pug
+  body(itemscope itemtype="http://schema.org/WebPage")
+    div.l-wrapper(itemscope itemprop="mainContentOfPage")
+    include components/_menu.pug
+    +menu('home')
+    main.l-main
+      div.d-demo
+        section.d-demo__section
+    include components/_footer.pug

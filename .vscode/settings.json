@@ -1,0 +1,7 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode", //VSCodeではPrettierで整形する
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true // ファイル保存時に ESLint でフォーマット
+  },
+  "editor.formatOnSave": true //ファイルを保存したタイミングでフォーマットする
+}

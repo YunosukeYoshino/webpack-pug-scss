@@ -1,0 +1,16 @@
+extends ./layouts/_master.pug
+
+block title
+  title My Page - about
+
+block manifestBrowserconfigFiles
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  // Menu
+  +menu('home')
+
+  //- Index page
+  section.page.home__page
+    h1.page__title # About page
